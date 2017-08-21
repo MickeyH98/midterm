@@ -59,6 +59,7 @@ table {
   background-color: lightblue;
   text-align: center;
   font-family: 'Quicksand', sans-serif;
+  display: none;
 }
 
 h1 {
@@ -81,10 +82,13 @@ h1 {
   padding: 10px 0px;
   border-radius: 10%;
   box-shadow: 0 0 10px 1px black;
+  transition-duration: 2s;
+  transition-property: transform;
 }
 
 .nav li:hover {
   background-color: white;
+  transform:rotate(360deg);
 }
 
 .nav li a {
@@ -200,10 +204,13 @@ table th {
   background-color: white;
   margin: 10%;
   width: 80%;
+  transition-duration: 1s;
+  transition-property: transform;
 }
 
 .codepen li:hover {
   background-color: lightgreen;
+  transform:rotate(360deg);
 }
 
 .codepen li a {
