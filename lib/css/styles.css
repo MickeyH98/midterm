@@ -82,13 +82,13 @@ h1 {
   padding: 10px 0px;
   border-radius: 10%;
   box-shadow: 0 0 10px 1px black;
-  transition-duration: 2s;
+  transition-duration: 1s;
   transition-property: transform;
 }
 
 .nav li:hover {
   background-color: white;
-  transform:rotate(360deg);
+  transform:rotate(25deg);
 }
 
 .nav li a {
@@ -101,7 +101,7 @@ h1 {
 }
 
 .dropdown:hover .dropdownContent {
-  display:block;
+  display: block;
   position: absolute;
 }
 
@@ -206,6 +206,7 @@ table th {
   width: 80%;
   transition-duration: 1s;
   transition-property: transform;
+  overflow: hidden;
 }
 
 .codepen li:hover {
