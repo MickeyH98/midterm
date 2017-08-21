@@ -55,9 +55,15 @@ table {
 
 .wrapper {
   width: 100%;
-  height: 725px;
-  background-color: lightgrey;
+  height: 800px;
+  background-color: lightblue;
   text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+  font-size: 2.5em;
+  background: linear-gradient(to bottom, white, lightblue);
 }
 
 /* *** NAV *** */
@@ -65,10 +71,25 @@ table {
 .nav {
   width: 100%;
   height: 100px;
+  margin-top: 20px;
 }
 
 .nav li {
-  width: 19%;
+  width: 18.5%;
+  background-color: skyblue;
+  border: 1px solid black;
+  padding: 10px 0px;
+  border-radius: 10%;
+  box-shadow: 0 0 10px 1px black;
+}
+
+.nav li:hover {
+  background-color: white;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: black;
 }
 
 .dropdownContent {
@@ -81,33 +102,54 @@ table {
 }
 
 .one{
-  margin-top: 5px;
-  right: 10px;
+  margin-top: 10px;
+  right: 2.5%;
 }
 
 .two{
-  margin-top: 20px;
-  right: 10px;
+  margin-top: 48px;
+  right: 2.5%;
 }
 
 .three{
-  margin-top: 35px;
-  right: 10px;
+  margin-top: 86px;
+  right: 2.5%;
 }
 
 .nav .inline-block {
   display: inline-block;
 }
 
+.wrapper .selected {
+  background-color: lightgreen;
+}
+
+/* *** FOOTER *** */
+
+footer {
+  background: linear-gradient(to top, white, lightblue);
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover {
+  color: blue;
+}
+
 /* *** INDEX *** */
 
 .contentArea {
   width: 90%;
-  height: 50%;
-  margin: 25% 5%;
-  background-image: url("../img/r2h.png");
+  height: 10%;
+  margin: 20% 5%;
+  background-image: url("../img/r2hbanner.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
 }
 
 /* *** CONTACT *** */
@@ -128,9 +170,14 @@ form label {
 /* *** TABLE *** */
 
 table {
-  background-color: grey;
-  width: 100%;
+  background-color: white;
+  width: 90%;
   height: 80%;
+  margin: 0 5%;
+}
+
+table th {
+  font-size: 1.5em;
 }
 
 table td,
@@ -138,5 +185,62 @@ table th {
   width: 50%;
   border: 1px solid black;
   text-align: center;
+  padding: 2% 0;
+}
+
+/* *** CODEPEN *** */
+
+.codepen {
+  width: 90%;
+  margin: 0 5%;
+}
+
+.codepen li {
+  padding: 5% 0;
+  background-color: white;
+  margin: 10%;
+  width: 80%;
+}
+
+.codepen li:hover {
+  background-color: lightgreen;
+}
+
+.codepen li a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  height: 100%;
+}
+
+/* *** DESKTOP VIEW *** */
+
+@media screen and (min-width: 1024px){
+
+  /* *** INDEX *** */
+
+  .contentArea {
+    height: 30%;
+    margin: 10% 5%;
+  }
+
+  /* *** CONTACT *** */
+
+  form input,
+  form textarea,
+  form select,
+  form label {
+    width: 51%;
+    margin: 1% 24%;
+  }
+
+  /* *** CODEPEN *** */
+
+  .codepen li {
+    padding: 2% 0;
+    background-color: white;
+    margin: 5% 20%;
+    width: 60%;
+  }
 
 }
